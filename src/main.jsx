@@ -1,10 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
 import "./index.css";
+import App from "./App";
+import Blog from "./Pages/Blog/Blog";
 
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-import Home from "./Pages/Home/Home";
+import JobApply from "./Pages/JobApply/JobApply";
+import Statistics from "./Pages/Statistics/statistics";
+import Home from "./Pages/Home/Home/Home";
+import JobDetails from "./Pages/Home/JobDetails/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +18,31 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch("jobs.json"),
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
+      },
+      {
+        path: "/applied-job",
+        element: <JobApply />,
+      },
+      {
+        path: "/job-details",
+        element: <JobDetails />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "*",
+        element: (
+          <div>
+            <Link to="/">go to homepage</Link>
+          </div>
+        ),
       },
     ],
   },

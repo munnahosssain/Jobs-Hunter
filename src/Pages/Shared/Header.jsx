@@ -1,20 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const navBar = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <Link>Item 3</Link>
+        <NavLink to="/statistics">Statistics</NavLink>
+      </li>
+      <li>
+        <NavLink to="/applied-job">Applied Jobs</NavLink>
+      </li>
+      <li>
+        <NavLink to="/blog">Blog</NavLink>
       </li>
     </>
   );
+
   return (
     <div className="navbar bg-base-100">
-      <div className="navbar-start">
+      <div className="navbar-start ">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -39,13 +46,17 @@ const Header = () => {
             {navBar}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Jobs Hunter </a>
+        <Link to="/" className="cursor-pointer font-bold text-2xl">
+          Jobs Hunter
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navBar}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Get started</a>
+        <Link to="/apply-jobs" className="btn bg-[#7E90FE] border-none">
+          Star Applying
+        </Link>
       </div>
     </div>
   );
