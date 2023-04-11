@@ -4,7 +4,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
 import { TbAddressBook, TbCurrencyTaka, TbPhone } from "react-icons/tb";
 import { TfiBag, TfiEmail } from "react-icons/tfi";
-// import vector from ;
+import { addToDb } from "../../../utilities";
+import vector from "../../../assets/All Images/Vector.png";
 
 const JobDetails = () => {
   const [details, setDetails] = useState({});
@@ -20,8 +21,8 @@ const JobDetails = () => {
       .then(data => setDetails(data.find(dt => dt.id === id)));
   }, []);
 
-  const handleApply = () => {
-    console.log("Clicked");
+  const handleApply = id => {
+    addToDb(id);
   };
 
   return (
@@ -70,7 +71,7 @@ const JobDetails = () => {
               </p>
             </div>
             <button
-              onClick={() => handleApply()}
+              onClick={() => handleApply(id)}
               className="btn bg-[#7E90FE] border-none w-full"
             >
               Apply Now

@@ -37,9 +37,11 @@ const Job = ({ job }) => {
           </p>
         </div>
       </div>
-      <button className="btn py-0 bg-[#7E90FE]">
-        <Link to={`job-details/${id}`}>View Details</Link>
-      </button>
+      <Link to={`job-details/${id}`}>
+        <button className="btn py-0 bg-[#7E90FE] border-none">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 };

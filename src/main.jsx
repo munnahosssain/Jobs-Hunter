@@ -1,18 +1,20 @@
-import React from "react";
 import "./index.css";
 import App from "./App";
+import React from "react";
 import Blog from "./Pages/Blog/Blog";
 import ReactDOM from "react-dom/client";
 import JobApply from "./Pages/JobApply/JobApply";
 import Statistics from "./Pages/Statistics/statistics";
 import Home from "./Pages/Home/Home/Home";
 import JobDetails from "./Pages/Home/JobDetails/JobDetails";
+import Error from "./Pages/Shared/Error/Error";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -35,14 +37,6 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
-      },
-      {
-        path: "*",
-        element: (
-          <div>
-            <Link to="/">go to homepage</Link>
-          </div>
-        ),
       },
     ],
   },
