@@ -2,7 +2,7 @@ import React from "react";
 import { GoLocation } from "react-icons/go";
 import { TbCurrencyTaka } from "react-icons/tb";
 import { Link } from "react-router-dom";
-const Job = ({ job, handleViewDetails }) => {
+const Job = ({ job }) => {
   const {
     id,
     companyLogo,
@@ -37,11 +37,8 @@ const Job = ({ job, handleViewDetails }) => {
           </p>
         </div>
       </div>
-      <button
-        onClick={() => handleViewDetails(id)}
-        className="btn py-0 bg-[#7E90FE]"
-      >
-        <Link to="/job-details">View Details</Link>
+      <button className="btn py-0 bg-[#7E90FE]">
+        <Link to={`job-details/${id}`}>View Details</Link>
       </button>
     </div>
   );

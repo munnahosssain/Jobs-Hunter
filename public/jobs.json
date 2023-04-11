@@ -4,80 +4,72 @@
         "companyLogo": "https://res.cloudinary.com/dpeoxmblg/image/upload/v1681106617/assets/logos/w3g9id6ywqobzjxwu1eq.png",
         "title": "Technical Database Engineer",
         "company": "Google LLC",
-        "jobType": "",
-        "location": "World Wide",
+        "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members",
+        "location": " World Wide",
         "fullTime": "Full Time",
         "partTime": "Part Time",
         "salary": "100K - 150K",
-        "description": "{{description()}",
-        "eduReq": "",
-        "experience": "",
-        "info": [
-            {
-                "email": "walshkemp@fiberox.com",
-                "phone": "+1 (827) 582-2699"
-            }
-        ]
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface",
+        "eduReq": "Bachelor degree to complete any reputational university.",
+        "experience": "5-8 Years in this field.",
+        "info": {
+            "email": "walshkemp@fiberox.com",
+            "phone": "+1 (827) 582-2699"
+        }
     },
     {
         "id": "6433aa88bd01845a33eae7c6",
         "companyLogo": "https://res.cloudinary.com/dpeoxmblg/image/upload/v1681106617/assets/logos/zptkibv958lnigujrkj5.png",
         "title": "Senior Product Designer",
         "company": "Netflix",
-        "jobType": "",
+        "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members",
         "location": "World Wide",
         "fullTime": "Full Time",
         "partTime": "Part Time",
         "salary": "100K - 150K",
-        "description": "{{description()}",
-        "eduReq": "",
-        "experience": "",
-        "info": [
-            {
-                "email": "walshkemp@enomen.com",
-                "phone": "+1 (993) 477-3951"
-            }
-        ]
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface",
+        "eduReq": "Bachelor degree to complete any reputational university.",
+        "experience": "2-3 Years in this field.",
+        "info": {
+            "email": "walshkemp@enomen.com",
+            "phone": "+1 (993) 477-3951"
+        }
     },
     {
         "id": "6433aa888e6668fd979bfc10",
         "companyLogo": "https://res.cloudinary.com/dpeoxmblg/image/upload/v1681120815/assets/logos/dfre4nvbejajpkkvkybs.png",
-        "title": "Senior Product Designer",
+        "title": "Product Designer",
         "company": "Spotify",
-        "jobType": "",
+        "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members",
         "location": "World Wide",
         "fullTime": "Full Time",
         "partTime": "Part Time",
         "salary": "100K - 150K",
-        "description": "{{description()}",
-        "eduReq": "",
-        "experience": "",
-        "info": [
-            {
-                "email": "walshkemp@nurplex.com",
-                "phone": "+1 (835) 546-3428"
-            }
-        ]
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface",
+        "eduReq": "Bachelor degree to complete any deputational university.",
+        "experience": "2 Years in this field.",
+        "info": {
+            "email": "walshkemp@nurplex.com",
+            "phone": "+1 (835) 546-3428"
+        }
     },
     {
         "id": "6433aa883f6943c02dbdda7c",
         "companyLogo": "https://res.cloudinary.com/dpeoxmblg/image/upload/v1681106617/assets/logos/rb2fktllmvvkmwps0yve.png",
         "title": "Software Engineer",
         "company": "Tesla",
-        "jobType": "",
+        "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members",
         "location": "World Wide",
         "fullTime": "Full Time",
         "partTime": "Part Time",
         "salary": "100K - 150K",
-        "description": "{{description()}",
-        "eduReq": "",
-        "experience": "",
-        "info": [
-            {
-                "email": "walshkemp@oceanica.com",
-                "phone": "+1 (838) 455-3702"
-            }
-        ]
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface",
+        "eduReq": "Bachelor degree to complete any reputational university.",
+        "experience": "2-3 Years in this field.",
+        "info": {
+            "email": "walshkemp@oceanica.com",
+            "phone": "+1 (838) 455-3702"
+        }
     },
     {
         "id": "6433aa88c86a0eb832198ef0",
@@ -89,34 +81,30 @@
         "fullTime": "Full Time",
         "partTime": "Part Time",
         "salary": "100K - 150K",
-        "description": "{{description()}",
-        "eduReq": "",
-        "experience": "",
-        "info": [
-            {
-                "email": "walshkemp@zillar.com",
-                "phone": "+1 (944) 485-3557"
-            }
-        ]
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface",
+        "eduReq": "Bachelor degree to complete any reputational university.",
+        "experience": "5 Years in this field.",
+        "info": {
+            "email": "walshkemp@zillar.com",
+            "phone": "+1 (944) 485-3557"
+        }
     },
     {
         "id": "6433aa88659863e693a88fa0",
         "companyLogo": "https://res.cloudinary.com/dpeoxmblg/image/upload/v1681120815/assets/logos/skurnbo3syvvu2c8cljw.png",
         "title": "Software Engineer",
         "company": "Figma",
-        "jobType": "",
+        "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members",
         "location": "World Wide",
         "fullTime": "Full Time",
         "partTime": "Part Time",
         "salary": "100K - 150K",
-        "description": "{{description()}",
-        "eduReq": "",
-        "experience": "",
-        "info": [
-            {
-                "email": "netbook.com",
-                "phone": "+1 (889) 407-2101"
-            }
-        ]
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface",
+        "eduReq": "Bachelor degree to complete any reputational university.",
+        "experience": "2-3 Years in this field.",
+        "info": {
+            "email": "netbook.com",
+            "phone": "+1 (889) 407-2101"
+        }
     }
 ]

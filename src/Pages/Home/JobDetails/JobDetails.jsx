@@ -1,14 +1,105 @@
-import React, { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
 import { CareerContext } from "../Home/Home";
+import { useLoaderData, useParams } from "react-router-dom";
+import { GoLocation } from "react-icons/go";
+import { TbAddressBook, TbCurrencyTaka, TbPhone } from "react-icons/tb";
+import { TfiBag, TfiEmail } from "react-icons/tfi";
+// import vector from ;
 
 const JobDetails = () => {
+  const [details, setDetails] = useState({});
+  const { salary, location, title, info } = details;
+  const { id } = useParams();
+
   const data = useContext(CareerContext);
-  console.log(data);
+  const paramsData = useLoaderData();
+
+  useEffect(() => {
+    fetch("/jobs.json")
+      .then(res => res.json())
+      .then(data => setDetails(data.find(dt => dt.id === id)));
+  }, []);
+
+  const handleApply = () => {
+    console.log("Clicked");
+  };
+
   return (
     <div>
-      <h1>{data.length}</h1>
-      <p>{data}</p>
+      <div
+        className="my-24"
+        style={{
+          backgroundImage: `url("../../../assets/All Images/Vector.png")`,
+        }}
+      >
+        <div>
+          <h1 className="text-center font-bold text-5xl">Job Details</h1>
+        </div>
+      </div>
+      <div className="hero ">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <div className="card w-96 bg-green-50">
+            <div className="card-body">
+              <h2 className="card-title text-2xl font-bold">Job Details</h2>
+              <div className="flex w-96">
+                <p className="flex items-center">
+                  <TbCurrencyTaka size={20} />{" "}
+                  <span className="mr-2 font-bold">Salary: </span> {location}
+                </p>
+              </div>
+              <p className="flex items-center">
+                <TfiBag /> <span className="mx-2 font-bold">Job Title:</span>
+                {title}
+              </p>
+              <h2 className="card-title text-2xl font-bold my-3">
+                Contact Information
+              </h2>
+              <div className="flex w-96">
+                <p className="flex items-center">
+                  <TbPhone size={20} />{" "}
+                  <span className="mx-2 font-bold">Phone: </span> {info?.phone}
+                </p>
+              </div>
+              <p className="flex items-center">
+                <TfiEmail /> <span className="mx-2 font-bold">Email:</span>
+                {info?.email}
+              </p>
+              <p className="flex items-center">
+                <GoLocation /> <span className="mx-2 font-bold">Address:</span>
+                {location}
+              </p>
+            </div>
+            <button
+              onClick={() => handleApply()}
+              className="btn bg-[#7E90FE] border-none w-full"
+            >
+              Apply Now
+            </button>
+          </div>
+          <div>
+            <h1 className="text-xl">
+              <span className="text-xl font-bold">Job Description: </span>
+              {details.description}
+            </h1>
+            <h1 className="my-6 text-xl">
+              <span className="text-xl font-bold">Job Responsibility: </span>
+              {details.jobResponsibility}
+            </h1>
+            <h1 className="text-xl">
+              <span className=" text-xl font-bold">
+                Educational Requirements:{" "}
+              </span>
+              <br />
+              {details.eduReq}
+            </h1>
+            <h1 className="text-xl my-4">
+              <span className=" text-xl font-bold mb-5">Experiences: </span>
+              <br />
+              {details.experience}
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
