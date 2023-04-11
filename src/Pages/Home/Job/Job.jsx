@@ -27,10 +27,10 @@ const Job = ({ job }) => {
           <div className="border px-2 badge-outline">{partTime}</div>
         </div>
         <div className="flex justify-center">
-          <p className="flex items-center">
-            <GoLocation />
+          <div className="flex items-center mr-6">
+            <GoLocation className="mr-1" />
             {location}
-          </p>
+          </div>
           <p className="flex items-center">
             <TbCurrencyTaka />
             {salary}
