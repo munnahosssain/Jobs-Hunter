@@ -4,6 +4,7 @@ import {
   RadarChart,
   PolarGrid,
   Legend,
+  Tooltip,
   PolarAngleAxis,
   PolarRadiusAxis,
 } from "recharts";
@@ -45,6 +46,11 @@ const Statistics = () => {
       A: 60,
       B: 60,
     },
+    {
+      subject: "A8",
+      A: 60,
+      B: 60,
+    },
   ];
   return (
     <div className="hero ">
@@ -76,6 +82,7 @@ const Statistics = () => {
             fillOpacity={0.6}
           />
           <Legend />
+          <Tooltip />
         </RadarChart>
       </div>
     </div>
