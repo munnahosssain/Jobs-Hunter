@@ -3,7 +3,7 @@ import App from "./App";
 import React from "react";
 import Blog from "./Pages/Blog/Blog";
 import ReactDOM from "react-dom/client";
-import JobApply from "./Pages/JobApply/JobApply";
+import JobApply from "./Pages/JobsApply/JobsApply";
 import Statistics from "./Pages/Statistics/statistics";
 import Home from "./Pages/Home/Home/Home";
 import JobDetails from "./Pages/Home/JobDetails/JobDetails";
