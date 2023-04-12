@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import { getShoppingCart } from "../../utilities";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import JobApply from "../JobApply/JobApply";
-import imgCover from "../../assets/All Images/Vector.png";
 
 const JobsApply = () => {
   const navigation = useNavigate();
   const jobs = useLoaderData();
-  // const [jobData, setJobData] = useState([]);
+  const [jobData, setJobData] = useState([]);
   const [filterList, setFilterList] = useState([]);
 
   useEffect(() => {
@@ -19,7 +18,7 @@ const JobsApply = () => {
         newJob.push(savedCast);
       }
     }
-    // setJobData(newJob);
+    setJobData(newJob);
     setFilterList(newJob);
   }, [jobs]);
 
@@ -28,19 +27,14 @@ const JobsApply = () => {
   };
 
   const handleFilter = value => {
-    setFilterList(jobs.filter(job => job.jobType == value));
+    setFilterList(jobData.filter(job => job.jobType === value));
   };
 
   return (
     <div>
-      <div
-        className="my-24"
-        style={{
-          backgroundImage: `url("../../assets/All Images/Vector.png")`,
-        }}
-      >
+      <div>
         <div>
-          <h1 className="text-center font-bold text-5xl">Job Details</h1>
+          <h1 className="my-24 text-center font-bold text-5xl">Job Details</h1>
         </div>
       </div>
       <div className="flex justify-end lg:mx-96">

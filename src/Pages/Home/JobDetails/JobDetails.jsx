@@ -1,19 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
-import { CareerContext } from "../Home/Home";
-import { useLoaderData, useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
-import { TbAddressBook, TbCurrencyTaka, TbPhone } from "react-icons/tb";
+import { TbCurrencyTaka, TbPhone } from "react-icons/tb";
 import { TfiBag, TfiEmail } from "react-icons/tfi";
 import { addToDb } from "../../../utilities";
-import vector from "../../../assets/All Images/Vector.png";
 
 const JobDetails = () => {
-  const [details, setDetails] = useState({});
-  const { salary, location, title, info } = details;
   const { id } = useParams();
-
-  const data = useContext(CareerContext);
-  const paramsData = useLoaderData();
+  const [details, setDetails] = useState({});
+  const { location, title, info } = details;
 
   useEffect(() => {
     fetch("/jobs.json")
@@ -27,15 +22,8 @@ const JobDetails = () => {
 
   return (
     <div>
-      <div
-        className="my-24"
-        style={{
-          backgroundImage: `url("../../../assets/All Images/Vector.png")`,
-        }}
-      >
-        <div>
-          <h1 className="text-center font-bold text-5xl">Job Details</h1>
-        </div>
+      <div>
+        <h1 className="my-24 text-center font-bold text-5xl">Job Details</h1>
       </div>
       <div className="hero ">
         <div className="hero-content flex-col lg:flex-row-reverse">
