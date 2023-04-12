@@ -7,7 +7,9 @@ const Footer = () => {
       <div className="lg:mx-48">
         <footer className="footer p-10 mt-12">
           <div>
-            <h1 className="text-4xl font-bold mb-3">CareerHub</h1>
+            <Link to="/" className="text-4xl font-bold mb-3">
+              JobsHunter
+            </Link>
             <p>
               There are many variations of passages <br /> of Lorem Ipsum , but
               the majority have <br /> suffered alteration in some form.

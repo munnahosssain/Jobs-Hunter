@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className="bg-base-200">
       <div className="lg:mx-48">
-        <div className="grid gap-4 lg:grid-cols-2 ">
+        <div className="grid gap-4 lg:grid-cols-2">
           <div className="lg:my-32 ">
             <h1 className="text-7xl font-semibold">
               One Step <br /> Closer To Your <br />

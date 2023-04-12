@@ -4,7 +4,7 @@
 
 ## Contributors
 
-- munna Hossain
+- Mayinuddin Munna
 
 ## Basic Structure
 
