@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getShoppingCart } from "../../utilities";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import JobApply from "../JobApply/JobApply";
 
 const JobsApply = () => {
-  const navigation = useNavigate();
   const jobs = useLoaderData();
   const [jobData, setJobData] = useState([]);
   const [filterList, setFilterList] = useState([]);
@@ -21,10 +20,6 @@ const JobsApply = () => {
     setJobData(newJob);
     setFilterList(newJob);
   }, [jobs]);
-
-  const handleBack = () => {
-    navigation(-1);
-  };
 
   const handleFilter = value => {
     setFilterList(jobData.filter(job => job.jobType === value));
@@ -47,7 +42,7 @@ const JobsApply = () => {
         </select>
       </div>
       {filterList.map(job => (
-        <JobApply key={job.id} job={job} handleBack={handleBack} />
+        <JobApply key={job.id} job={job} />
       ))}
     </div>
   );

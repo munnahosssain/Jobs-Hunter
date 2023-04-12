@@ -6,14 +6,10 @@ const Featured = () => {
   const jobs = useContext(CareerContext);
   const [seeMore, setSeeMore] = useState(4);
 
+  const displayedJobs = jobs.slice(0, seeMore);
   const handleSeeMore = () => {
     setSeeMore(seeMore + 4);
   };
-  const handleSeeLess = () => {
-    setSeeMore(seeMore - 4);
-  };
-
-  const displayedJobs = jobs.slice(0, seeMore);
 
   return (
     <div className="my-12 lg:mx-48">
@@ -34,14 +30,6 @@ const Featured = () => {
             className="btn bg-[#7E90FE] border-none btn-wide"
           >
             See more
-          </button>
-        )}
-        {seeMore > 6 && (
-          <button
-            onClick={handleSeeLess}
-            className="btn bg-[#7E90FE] border-none btn-wide"
-          >
-            See less
           </button>
         )}
       </div>

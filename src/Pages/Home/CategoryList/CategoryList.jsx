@@ -20,7 +20,7 @@ const CategoryList = () => {
         {data.map(data => (
           <div
             key={data.id}
-            className="p-6 grid gap-6 card-compact w-96 bg-[7E90FE] shadow-xl"
+            className="p-10 grid gap-6 card-compact w-96 bg-[7E90FE] shadow-xl"
           >
             <figure>
               <img src={data.logo} alt="Logo" />

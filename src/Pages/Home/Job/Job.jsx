@@ -11,6 +11,7 @@ const Job = ({ job }) => {
     location,
     salary,
     fullTime,
+    jobType,
     partTime,
   } = job;
 
@@ -23,8 +24,8 @@ const Job = ({ job }) => {
         <h2 className="card-title">{title}</h2>
         <p>{company}</p>
         <div className="card-actions ">
+          <div className="border px-2 badge-outline">{jobType}</div>
           <div className="border px-2 badge-outline">{fullTime}</div>
-          <div className="border px-2 badge-outline">{partTime}</div>
         </div>
         <div className="flex justify-center">
           <div className="flex items-center mr-6">
