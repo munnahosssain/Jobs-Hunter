@@ -68,14 +68,14 @@ const Statistics = () => {
           <PolarAngleAxis dataKey="subject" />
           <PolarRadiusAxis angle={30} domain={[0, 60]} />
           <Radar
-            name="Get Marks"
+            name="Total Marks"
             dataKey="A"
             stroke="#D21312"
             fill="#8884d8"
             fillOpacity={0.6}
           />
           <Radar
-            name="Total Marks"
+            name="Get Marks"
             dataKey="B"
             stroke="#393646"
             fill="#82ca9d"

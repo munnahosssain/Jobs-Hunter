@@ -27,6 +27,15 @@ const JobsApply = () => {
 
   return (
     <div>
+      <div className="flex text-end">
+        <select className="select w-36 border-node">
+          <option disabled selected>
+            Filter By
+          </option>
+          <option>Remote Job</option>
+          <option>On Side</option>
+        </select>
+      </div>
       {jobData.map(job => (
         <JobApply key={job.id} job={job} handleBack={handleBack} />
       ))}
