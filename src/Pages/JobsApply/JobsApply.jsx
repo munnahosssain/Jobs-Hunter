@@ -4,9 +4,18 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import JobApply from "../JobApply/JobApply";
 import imgCover from "../../assets/All Images/Vector.png";
 
+const jobId = [
+  { id: 1, title: "Job A", onTime: true, remote: true },
+  { id: 2, title: "Job B", onTime: false, remote: true },
+  { id: 3, title: "Job C", onTime: true, remote: false },
+  { id: 4, title: "Job D", onTime: false, remote: false },
+];
+
 const JobsApply = () => {
+  const navigation = useNavigate();
   const jobs = useLoaderData();
   const [jobData, setJobData] = useState([]);
+  const [filterList, setFilterList] = useState();
 
   useEffect(() => {
     const storedCart = getShoppingCart();
@@ -20,12 +29,13 @@ const JobsApply = () => {
     setJobData(newJob);
   }, [jobs]);
 
-  const navigation = useNavigate();
   const handleBack = () => {
     navigation(-1);
   };
 
-  // handleFilterChange;
+  const handleFilter = value => {
+    setFilterList(jobs.filter(job => job.jobType == value));
+  };
 
   return (
     <div>
@@ -40,15 +50,10 @@ const JobsApply = () => {
         </div>
       </div>
       <div className="flex justify-end lg:mx-96">
-        <select
-          // onChange={handleFilterChange}
-          className="select w-36 border-node"
-        >
-          <option disabled selected>
-            Filter By
-          </option>
-          <option>Remote Job</option>
-          <option>On Side</option>
+        <select onChange={event => handleFilter(event.target.value)}>
+          <option disabled>Filter By</option>
+          <option value="Remote Job">Remote Job</option>
+          <option value="On Side">On Side</option>
         </select>
       </div>
       {jobData.map(job => (
