@@ -38,7 +38,7 @@ const JobsApply = () => {
             Filter By
           </option>
           <option value="Remote">Remote</option>
-          <option value="OnTime">OnTime</option>
+          <option value="OnSite">OnSite</option>
         </select>
       </div>
       {filterList.map(job => (

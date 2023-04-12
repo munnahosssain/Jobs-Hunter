@@ -53,7 +53,7 @@ const Statistics = () => {
     },
   ];
   return (
-    <div className="hero ">
+    <div className="hero">
       <div className="hero-content text-center">
         <RadarChart
           className="m-0"

@@ -16,11 +16,11 @@ const CategoryList = () => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-center gap-4 mt-12 ">
+      <div className="mx-4 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-center gap-4 mt-12 ">
         {data.map(data => (
           <div
             key={data.id}
-            className="p-10 grid gap-6 card-compact w-96 bg-[7E90FE] shadow-xl"
+            className="p-10 grid gap-6 card-compact lg:w-96 bg-[7E90FE] shadow-md"
           >
             <figure>
               <img src={data.logo} alt="Logo" />

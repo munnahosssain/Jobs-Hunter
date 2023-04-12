@@ -10,7 +10,6 @@ const JobApply = ({ job }) => {
     companyLogo,
     company,
     fullTime,
-    partTime,
     jobType,
     location,
     salary,
