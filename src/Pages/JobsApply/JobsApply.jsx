@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { getShoppingCart } from "../../utilities";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import JobApply from "../JobApply/JobApply";
+import imgCover from "../../assets/All Images/Vector.png";
 
 const JobsApply = () => {
   const jobs = useLoaderData();
-
   const [jobData, setJobData] = useState([]);
 
   useEffect(() => {
@@ -25,10 +25,25 @@ const JobsApply = () => {
     navigation(-1);
   };
 
+  // handleFilterChange;
+
   return (
     <div>
-      <div className="flex text-end">
-        <select className="select w-36 border-node">
+      <div
+        className="my-24"
+        style={{
+          backgroundImage: `url("../../assets/All Images/Vector.png")`,
+        }}
+      >
+        <div>
+          <h1 className="text-center font-bold text-5xl">Job Details</h1>
+        </div>
+      </div>
+      <div className="flex justify-end lg:mx-96">
+        <select
+          // onChange={handleFilterChange}
+          className="select w-36 border-node"
+        >
           <option disabled selected>
             Filter By
           </option>

@@ -5,10 +5,10 @@ import Footer from "./Pages/Shared/Footer";
 
 function App() {
   return (
-    <div className="lg:mx-48">
+    <div className="">
       <Header />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

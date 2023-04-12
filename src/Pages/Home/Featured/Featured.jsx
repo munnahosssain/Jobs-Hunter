@@ -16,7 +16,7 @@ const Featured = () => {
   const displayedJobs = jobs.slice(0, seeMore);
 
   return (
-    <div className="my-12 ">
+    <div className="my-12 lg:mx-48">
       <h1 className="text-center text-5xl font-semibold">Featured Jobs</h1>
       <p className="text-center m-6">
         Explore thousands of job opportunities with all the information you

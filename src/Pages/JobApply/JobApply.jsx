@@ -6,8 +6,8 @@ const JobApply = ({ job, handleBack }) => {
   const { title, companyLogo, company, fullTime, partTime, location, salary } =
     job;
   return (
-    <div className="mt-20 flex items-center lg:mx-48">
-      <figure>
+    <div className="flex items-center lg:mx-96">
+      <figure className="h-56 w-60 flex items-center justify-center bg-base-200 mt-6">
         <img src={companyLogo} alt="company logo" />
       </figure>
       <div className="card-body">
