@@ -14,8 +14,8 @@ const jobId = [
 const JobsApply = () => {
   const navigation = useNavigate();
   const jobs = useLoaderData();
-  const [jobData, setJobData] = useState([]);
-  const [filterList, setFilterList] = useState();
+  // const [jobData, setJobData] = useState([]);
+  const [filterList, setFilterList] = useState([]);
 
   useEffect(() => {
     const storedCart = getShoppingCart();
@@ -26,7 +26,8 @@ const JobsApply = () => {
         newJob.push(savedCast);
       }
     }
-    setJobData(newJob);
+    // setJobData(newJob);
+    setFilterList(newJob);
   }, [jobs]);
 
   const handleBack = () => {
@@ -51,12 +52,14 @@ const JobsApply = () => {
       </div>
       <div className="flex justify-end lg:mx-96">
         <select onChange={event => handleFilter(event.target.value)}>
-          <option disabled>Filter By</option>
-          <option value="Remote Job">Remote Job</option>
-          <option value="On Side">On Side</option>
+          <option disabled selected>
+            Filter By
+          </option>
+          <option value="Remote">Remote</option>
+          <option value="OnTime">OnTime</option>
         </select>
       </div>
-      {jobData.map(job => (
+      {filterList.map(job => (
         <JobApply key={job.id} job={job} handleBack={handleBack} />
       ))}
     </div>
