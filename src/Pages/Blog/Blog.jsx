@@ -30,8 +30,12 @@ const Blog = () => {
   return (
     <div className="lg:mx-48">
       <h1 className="font-bold text-4xl my-16 text-center">Applied Jobs</h1>
-      {data.map(blog => (
-        <div key={blog.id} tabIndex={0} className="collapse group">
+      {data.map((blog, index) => (
+        <div
+          key={blog.id}
+          tabIndex={index}
+          className="collapse collapse-arrow group"
+        >
           <div className="collapse-title bg-indigo-600 rounded-xl text-primary-content text-3xl group-focus:bg-indigo-900 group-focus:text-secondary-content">
             {blog.question}
           </div>

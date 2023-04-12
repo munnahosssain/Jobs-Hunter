@@ -4,13 +4,6 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import JobApply from "../JobApply/JobApply";
 import imgCover from "../../assets/All Images/Vector.png";
 
-const jobId = [
-  { id: 1, title: "Job A", onTime: true, remote: true },
-  { id: 2, title: "Job B", onTime: false, remote: true },
-  { id: 3, title: "Job C", onTime: true, remote: false },
-  { id: 4, title: "Job D", onTime: false, remote: false },
-];
-
 const JobsApply = () => {
   const navigation = useNavigate();
   const jobs = useLoaderData();
