@@ -2,7 +2,7 @@
 
 # Live Site: https://magical-otter-d9f028.netlify.app/
 
-## Contributors
+## Contributor
 
 - Mayinuddin Munna
 
@@ -25,6 +25,7 @@ The home page contains the basic jobs of the company. These include:
 - Banner
 - Jobs Categories
 - Featured jobs
+- Footer
 
 ## Blog Page
 
